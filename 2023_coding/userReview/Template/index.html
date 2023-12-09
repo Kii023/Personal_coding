@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Review Site</title>
+  <style>
+    /* CSS スタイルをここに追加 */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .search-container {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .search-container input[type="text"] {
+      padding: 5px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-container button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .item-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .item-card h2 {
+      margin-top: 0;
+    }
+
+    .item-card p {
+      margin-bottom: 0;
+    }
+
+    .review_link {
+      text-align: right;
+    }
+
+    .review-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .review-list li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    .review-list li:last-child {
+      border-bottom: none;
+    }
+
+    .review-list li .review-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .review-list li .review-info .username {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .review-list li .review-rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .review-list li .review-rating .rating-stars {
+      color: orange;
+      margin-right: 5px;
+    }
+
+    /* お気に入りボタンのスタイル */
+    .favorite-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      font-size: 40px;
+      background-color: transparent;
+      color: #ccc;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .favorite-button.is-favorite {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>User Review Site</h1>
+
+    <div class="search-container">
+      <input type="text" id="search" name="search" placeholder="Search items or categories">
+      <button type="button">Search</button>
+    </div>
+
+    <div class="item-card">
+      <h2>Item Title</h2>
+      <p>Item Description</p>
+      <p>Category: Category Name</p>
+      <p>Average Rating: 4.5 Stars</p>
+      <p class="review_link"><a href="review.html">Read Reviews</a></p>
+      <p class="review_link"><a href="add_review.html">Add Review</a></p>
+      <button class="favorite-button is-favorite">&#10084;</button> <!-- ハートマークのボタン -->
+    </div>
+
+    <div class="item-card">
+      <h2>Another Item Title</h2>
+      <p>Another Item Description</p>
+      <p>Category: Another Category Name</p>
+      <p>Average Rating: 3.8 Stars</p>
+      <p class="review_link"><a href="review.html">Read Reviews</a></p>
+      <p class="review_link"><a href="add_review.html">Add Review</a></p>
+      <button class="favorite-button">&#10084;</button> <!-- ハートマークのボタン -->
+    </div>
+  </div>
+</body>
+</html>

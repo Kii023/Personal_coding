@@ -20,4 +20,4 @@ for i, img_tag in enumerate(img_tags):
 
     img = Image.open(io.BytesIO(requests.get(img_tag).content))
     # 文字列に変数を入れる場合：文字列の前にfをいれ、入れる変数を{}で囲む必要がある
-    img.save(f'2023_coding/scraping/img/sample{i}.jpg')
+    img.save(f'/Users/taiki/Documents/GitHub/python/Personal_coding/2023_coding/scraping/img/sample{i}.jpg')

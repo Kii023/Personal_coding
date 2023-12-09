@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Review Site - Item Reviews</title>
+  <style>
+    /* CSS スタイルをここに追加 */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .review-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .review-card h2 {
+      margin-top: 0;
+    }
+
+    .review-card p {
+      margin-bottom: 0;
+    }
+
+    .review-card .review-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .review-card .review-info .username {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .review-card .review-rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .review-card .review-rating .rating-stars {
+      color: orange;
+      margin-right: 5px;
+    }
+
+    .like-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .like-button button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .like-button button:hover {
+      background-color: #0056b3;
+    }
+
+    .like-button button .like-icon {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Item Reviews</h1>
+
+    <div class="review-card">
+      <h2>Review Title</h2>
+      <div class="review-info">
+        <span class="username">John Doe</span>
+        <span class="review-date">May 1, 2023</span>
+      </div>
+      <div class="review-rating">
+        <span class="rating-stars">★★★★★</span>
+        <span class="rating-value">4.5</span>
+      </div>
+      <p>This is a great item. Highly recommended!</p>
+
+      <div class="like-button">
+        <button>
+          <span class="like-icon">👍</span>
+          <span class="like-count">10</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <h2>Another Review Title</h2>
+      <div class="review-info">
+        <span class="username">Sarah Adams</span>
+        <span class="review-date">April 28, 2023</span>
+      </div>
+      <div class="review-rating">
+        <span class="rating-stars">★★★☆☆</span>
+        <span class="rating-value">3.0</span>
+      </div>
+      <p>This item could use some improvements.</p>
+
+      <div class="like-button">
+        <button>
+          <span class="like-icon">👍</span>
+          <span class="like-count">5</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
